@@ -1,75 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Sharma Services</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #f2f2f2;
-      line-height: 1.6;
-    }
-    header {
-      background: #0d6efd;
-      color: white;
-      padding: 25px 15px;
-      text-align: center;
-    }
-    section {
-      background: white;
-      margin: 15px;
-      padding: 20px;
-      border-radius: 10px;
-    }
-    h2 {
-      color: #0d6efd;
-      margin-top: 0;
-    }
-    ul {
-      padding-left: 20px;
-    }
-    .btn {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 12px 18px;
-      background: #0d6efd;
-      color: white;
-      text-decoration: none;
-      border-radius: 6px;
-    }
-    .btn-whatsapp {
-      background: #25d366;
-      margin-left: 10px;
-    }
-    .highlight {
-      background: #eef4ff;
-      border-left: 5px solid #0d6efd;
-      padding: 15px;
-      border-radius: 6px;
-    }
-    footer {
-      text-align: center;
-      padding: 15px;
-      font-size: 14px;
-      color: #555;
-    }
-  </style>
+<meta charset="UTF-8">
+<title>Sharma Services</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f2f2f2;line-height:1.6}
+header{background:#0d6efd;color:#fff;padding:30px 15px;text-align:center}
+header h1{margin:0;font-size:28px}
+header p{margin:8px 0 0}
+section{background:#fff;margin:15px;padding:20px;border-radius:10px}
+h2{color:#0d6efd;margin-top:0}
+ul{padding-left:20px}
+.badges span{display:inline-block;background:#eef4ff;color:#0d6efd;padding:6px 10px;border-radius:20px;font-size:13px;margin:5px}
+.btn{display:inline-block;padding:12px 18px;border-radius:6px;text-decoration:none;color:#fff;background:#0d6efd;margin-top:10px}
+.btn-wa{background:#25d366;margin-left:8px}
+.review{background:#f9f9f9;padding:12px;border-left:4px solid #0d6efd;margin-bottom:10px;border-radius:5px}
+.gallery img{width:100%;border-radius:8px;margin-bottom:10px}
+footer{text-align:center;padding:15px;font-size:14px;color:#555}
+
+/* fixed bar */
+.fixed-bar{
+ position:fixed;bottom:0;left:0;width:100%;
+ background:#fff;display:flex;box-shadow:0 -2px 6px rgba(0,0,0,0.15)
+}
+.fixed-bar a{
+ flex:1;text-align:center;padding:14px 0;
+ font-weight:bold;text-decoration:none
+}
+.call{color:#fff;background:#0d6efd}
+.whatsapp{color:#fff;background:#25d366}
+</style>
 </head>
+
 <body>
 
 <header>
   <h1>Sharma Services</h1>
-  <p>Fast • Reliable • Affordable Local Services</p>
+  <p>Fast • Trusted • Affordable Local Services</p>
+  <a class="btn" href="tel:9XXXXXXXXX">Call Now</a>
+  <a class="btn btn-wa" href="https://wa.me/919XXXXXXXXX">WhatsApp</a>
 </header>
 
 <section>
-  <h2>About Us</h2>
-  <p>
-    We provide trusted local services with quick response and honest pricing.
-    Our goal is customer satisfaction and long-term service.
-  </p>
+  <h2>Why Choose Us?</h2>
+  <div class="badges">
+    <span>✔ 100+ Happy Customers</span>
+    <span>✔ Same Day Service</span>
+    <span>✔ Affordable Pricing</span>
+    <span>✔ Trusted Professionals</span>
+  </div>
 </section>
 
 <section>
@@ -77,19 +58,24 @@
   <ul>
     <li>Electrician Service</li>
     <li>Plumber Service</li>
-    <li>Home Repair</li>
+    <li>Home Repair & Maintenance</li>
     <li>Emergency Support</li>
   </ul>
 </section>
 
-<section class="highlight">
-  <h2>Why Choose Us?</h2>
-  <ul>
-    <li>Quick response time</li>
-    <li>Experienced professionals</li>
-    <li>Affordable pricing</li>
-    <li>Customer satisfaction guaranteed</li>
-  </ul>
+<section>
+  <h2>Customer Reviews</h2>
+  <div class="review">⭐️⭐️⭐️⭐️⭐️ Very fast service, highly recommended.</div>
+  <div class="review">⭐️⭐️⭐️⭐️⭐️ Affordable and professional work.</div>
+  <div class="review">⭐️⭐️⭐️⭐️⭐️ On-time and polite staff.</div>
+</section>
+
+<section>
+  <h2>Our Work</h2>
+  <div class="gallery">
+    <img src="https://via.placeholder.com/400x200?text=Service+Work+1">
+    <img src="https://via.placeholder.com/400x200?text=Service+Work+2">
+  </div>
 </section>
 
 <section>
@@ -101,14 +87,18 @@
   <h2>Contact Us</h2>
   <p><strong>Phone:</strong> 9XXXXXXXXX</p>
   <p><strong>Location:</strong> Your City</p>
-
   <a class="btn" href="tel:9XXXXXXXXX">Call Now</a>
-  <a class="btn btn-whatsapp" href="https://wa.me/919XXXXXXXXX">Chat on WhatsApp</a>
+  <a class="btn btn-wa" href="https://wa.me/919XXXXXXXXX">Chat on WhatsApp</a>
 </section>
 
 <footer>
   © 2026 Sharma Services. All rights reserved.
 </footer>
+
+<div class="fixed-bar">
+  <a class="call" href="tel:9XXXXXXXXX">📞 Call</a>
+  <a class="whatsapp" href="https://wa.me/919XXXXXXXXX">💬 WhatsApp</a>
+</div>
 
 </body>
 </html>
